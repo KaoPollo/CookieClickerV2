@@ -6,7 +6,7 @@
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" rel="stylesheet">
-    <title>Cookie Clicker</title>
+    <title>Imperial Clicker</title>
 </head>
 
 <body>
@@ -24,55 +24,48 @@
             <div class="row text-center">
                 <div class="mt-16">
                     <button type="button" class="inline-flex items-center justify-center px-5 py-2.5 text-sm font-medium text-center bg-gradient-to-r from-gray-500 to-gray-800 rounded-lg w-60 shadow-lg shadow-gray-500/50">
-                        Imperial Credits : 
-                        <span class="inline-flex items-center justify-center w-4 h-4 ml-2 text-xs font-semibold text-red-700 bg-white rounded-full">
-                        0
-                        </span>
+                        <span>Imperial Credits :  <span id="score" > 0 </span></span>
+                       
                     </button>
                 </div>
                 <div class="mt-10">
-                    <button type="button"><img src="./assets/deathstar2.png"></button>
-                </div>
-
-                
-            
+                    <button type="button" id="cookie"><img src="./assets/deathstar2.png"></button>
+                </div>     
             </div>
         </div>
 
 
 
-        <div class="flex flex-col md:flex-row justify-center items-center mt-10">
-            <button class="flex flex-col items-center mx-auto my-auto mx-2 my-2 bg-gradient-to-r from-red-600 to-red-900 shadow-lg shadow-red-700/50 rounded text-white p-2 w-60">
+        <div id="buyClick" class="flex flex-col md:flex-row justify-center items-center mt-10">
+            <button class="flex flex-col items-center mx-auto my-auto mx-2 my-2 bg-gradient-to-r from-red-600 to-red-900 shadow-lg shadow-red-700/50 rounded text-white p-2 w-60 h-36">
                 <img src="./assets/stormtrooper.png" class="object-center w-5">
                 <p>Stormtrooper : <span id="clickprice">100</span> IC</p>
                 <p>Produit <span id="clickmultiple">1</span> cookie(s) par click</p>
                 <p>Niveau : <span id="clicklevel">0</span></p>
             </button>
 
-            <button class="flex flex-col items-center mx-auto my-auto mx-2 my-2 bg-gradient-to-r from-red-600 to-red-900 shadow-lg shadow-red-700/50 rounded text-white p-2 w-60">
+            <button id="buyAuto" class="flex flex-col items-center mx-auto my-auto mx-2 my-2 bg-gradient-to-r from-red-600 to-red-900 shadow-lg shadow-red-700/50 rounded text-white p-2 w-60 h-36">
                 <img src="./assets/droid.png" class="object-center w-5">
-                <p>Droid : <span id="clickprice">500</span> IC</p>
-                <p>Produit <span id="clickmultiple">1</span> cookie(s) par seconde</p>
-                <p>Niveau : <span id="clicklevel">0</span></p>
+                <p>Droid : <span id="autoprice">500</span> IC</p>
+                <p>Produit <span id="clickauto">10</span> cookie(s) par seconde</p>
+                <p>Niveau : <span id="autolevel">0</span></p>
             </button>
 
-            <button class="flex flex-col items-center mx-auto my-auto mx-2 my-2 bg-gradient-to-r from-red-600 to-red-900 shadow-lg shadow-red-700/50 rounded text-white p-2 w-60">
+            <button class="flex flex-col items-center mx-auto my-auto mx-2 my-2 bg-gradient-to-r from-red-600 to-red-900 shadow-lg shadow-red-700/50 rounded text-white p-2 w-60 h-36">
                 <img src="./assets/darthvader.png" class="object-center w-5">
-                <p>Darth Vader : <span id="clickprice">1000</span> IC</p>
-                <p>+300% click pendant Xs </p>
-                <p>Niveau : <span id="clicklevel">0</span></p>
-            </button>
-            
+                <p>Darth Vader : <span id="timeprice">1000</span> IC</p>
+                <p>+300% /click pendant Xs </p>
+                <p>Niveau : <span id="timelevel">0</span></p>
+            </button>          
         </div>
-
-        
+              
     </div>
    
    
     
     
     
-    <footer class="p-4 bg-white rounded-lg shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800">
+    <footer class="p-4 bg-white shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800">
         <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="https://kaopollo.github.io/" class="hover:underline">Greg Creutz</a>. All Rights Reserved.
         </span>
         <ul class="flex flex-wrap items-center mt-3 text-sm text-gray-500 dark:text-gray-400 sm:mt-0">
