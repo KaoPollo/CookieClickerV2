@@ -20,6 +20,7 @@ let refreshPowerClick = function() {
     clickPowerLevel.innerHTML = clickPowerLevelNumber;
     clickPowerPrice.innerHTML = clickPowerPriceAmount;
     clickPowerMultiple.innerHTML = clickPower;
+    timeprice.innerHTML = timePriceAmount;
   }
 
 let refreshAuto = function() {
@@ -27,9 +28,14 @@ let refreshAuto = function() {
     autoprice.innerHTML = autoPriceAmount;
     clickauto.innerHTML = autoPower;
     clickauto.innerHTML = autoPower - 10;
+    
   }
 
-
+function buttonsEnabler() {
+    multiplyEnabler();
+    autoclickEnabler();
+    bonusEnabler();
+  }
 
 
 
@@ -119,8 +125,42 @@ let autoAutoStart = function() {
 
 
 
+// Bonus Temporaire
 
- 
+let buyTime = document.getElementById('buyTime');
+let timeprice = document.getElementById('timeprice');
+let timeleft = document.getElementById('timeleft');
+
+let timePriceAmount = 1000;
+
+buyTime.addEventListener("click", function() {
+    if (cookieCount >= timePriceAmount) {
+        cookieCount -= timePriceAmount;
+        refreshCookieCount()
+
+        timePriceAmount = Math.floor(timePriceAmount * 1.5);
+        timeleft.innerHTML = "5";
+        clickPower *= 3;
+        refreshPowerClick();
+
+        let timerId = setInterval(function() {
+            timeleft.innerHTML -= 1;
+            if (timeleft.innerHTML == 0) {
+                clearInterval(timerId);
+                timeleft.innerHTML = "Bonus terminé";
+                clickPower /= 3;
+                refreshPowerClick();
+            }
+        }, 1000);
+    }
+})
+
+
+
+  
+
+
+
 
 
 

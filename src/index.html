@@ -37,25 +37,32 @@
 
 
         <div id="buyClick" class="flex flex-col md:flex-row justify-center items-center mt-10">
-            <button class="flex flex-col items-center mx-auto my-auto mx-2 my-2 bg-gradient-to-r from-red-600 to-red-900 shadow-lg shadow-red-700/50 rounded text-white p-2 w-60 h-36">
+            <button class="flex flex-col items-center mx-auto my-auto mx-2 my-2 bg-gradient-to-r from-red-600 to-red-900 shadow-lg shadow-red-700/50 rounded text-white p-2 w-60 h-30">
                 <img src="./assets/stormtrooper.png" class="object-center w-5">
                 <p>Stormtrooper : <span id="clickprice">100</span> IC</p>
-                <p>Produit <span id="clickmultiple">1</span> cookie(s) par click</p>
-                <p>Niveau : <span id="clicklevel">0</span></p>
+                    <div class="text-sm">
+                        <p>Niveau : <span id="clicklevel">0</span></p>
+                        <p>Produit <span id="clickmultiple">1</span> cookie(s) par click</p>           
+                    </div>
+                
             </button>
 
-            <button id="buyAuto" class="flex flex-col items-center mx-auto my-auto mx-2 my-2 bg-gradient-to-r from-red-600 to-red-900 shadow-lg shadow-red-700/50 rounded text-white p-2 w-60 h-36">
+            <button id="buyAuto" class="flex flex-col items-center mx-auto my-auto mx-2 my-2 bg-gradient-to-r from-red-600 to-red-900 shadow-lg shadow-red-700/50 rounded text-white p-2 w-60 h-30">
                 <img src="./assets/droid.png" class="object-center w-5">
                 <p>Droid : <span id="autoprice">500</span> IC</p>
-                <p>Produit <span id="clickauto">10</span> cookie(s) par seconde</p>
-                <p>Niveau : <span id="autolevel">0</span></p>
+                    <div class="text-sm">
+                        <p>Niveau : <span id="autolevel">0</span></p>
+                        <p>Produit <span id="clickauto">10</span> cookie(s) par seconde</p>
+                    </div>
             </button>
 
-            <button class="flex flex-col items-center mx-auto my-auto mx-2 my-2 bg-gradient-to-r from-red-600 to-red-900 shadow-lg shadow-red-700/50 rounded text-white p-2 w-60 h-36">
+            <button id="buyTime" class="flex flex-col items-center mx-auto my-auto mx-2 my-2 bg-gradient-to-r from-red-600 to-red-900 shadow-lg shadow-red-700/50 rounded text-white p-2 w-60 h-30">
                 <img src="./assets/darthvader.png" class="object-center w-5">
                 <p>Darth Vader : <span id="timeprice">1000</span> IC</p>
-                <p>+300% /click pendant Xs </p>
-                <p>Niveau : <span id="timelevel">0</span></p>
+                    <div class="text-sm">
+                        <p>Temps : <span id="timeleft">5</span></p> 
+                        <p>+300% /click pendant 5 sec </p> 
+                    </div>                
             </button>          
         </div>
               
