@@ -133,7 +133,7 @@ buyTime.addEventListener("click", function() {
         cookieCount -= timePriceAmount;
         refreshCookieCount()
 
-        timePriceAmount = Math.floor(timePriceAmount * 1.5);
+        timePriceAmount = Math.floor(timePriceAmount * 2);
         timeleft.innerHTML = "5";
         clickPower *= 3;
         refreshPowerClick();
