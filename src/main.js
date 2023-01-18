@@ -62,7 +62,7 @@ buyClick.addEventListener("click", function() {
         refreshCookieCount();
 
         clickPowerLevelNumber += 1;
-        clickPowerPriceAmount = Math.floor(clickPowerPriceAmount * 1.5);
+        clickPowerPriceAmount = Math.floor(clickPowerPriceAmount * 2);
         clickPower += 1;
         refreshPowerClick();
     } 
@@ -101,7 +101,7 @@ buyAuto.addEventListener("click", function() {
         refreshCookieCount()
 
         autoLevelNumber += 1;
-        autoPriceAmount = Math.floor(autoPriceAmount * 1.5);
+        autoPriceAmount = Math.floor(autoPriceAmount * 2);
         autoPower += 10;
         refreshAuto();
 
