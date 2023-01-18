@@ -8,7 +8,7 @@ This is heavily inspired in the Cookie Clicker game.
 
 ## See it Live
 
-Click here to see the [live version]https://kaopollo.github.io/CookieClickerV2/)
+Click here to see the [live version](https://kaopollo.github.io/CookieClickerV2/)
 
 ## Technologies Used
 
