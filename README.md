@@ -1,4 +1,4 @@
-# PImperial Clicker
+# Imperial Clicker
 
 Join the Dark Side, We have Cookies!
 
@@ -12,7 +12,7 @@ Click here to see the [live version]https://kaopollo.github.io/CookieClickerV2/)
 
 ## Technologies Used
 
-- `javascript` frontend library
+- `javascript` 
 - `tailwind` css framework
 
 ## Develop
