@@ -8,7 +8,6 @@ let clickPower = 1;
 let cookieCounter = document.getElementById('score');
 let cookie = document.getElementById('cookie');
 
-cookieCounter.innerHTML = cookieCount;
 
 
 
@@ -31,11 +30,9 @@ let refreshAuto = function() {
     
   }
 
-function buttonsEnabler() {
-    multiplyEnabler();
-    autoclickEnabler();
-    bonusEnabler();
-  }
+
+
+
 
 
 
@@ -48,23 +45,21 @@ cookie.addEventListener("click", function() {
 
 
 
-
-
   // Clic boost
 
 let clickPowerPriceAmount = 100;
 let clickPowerLevelNumber = 0; 
 
-let buyClickPower = document.getElementById('buyClick');
+let buyClick = document.getElementById('buyClick');
 let clickPowerPrice = document.getElementById('clickprice');
 let clickPowerLevel = document.getElementById('clicklevel');
 let clickPowerMultiple = document.getElementById('clickmultiple');
 
-buyClickPower.addEventListener("click", function() {
+buyClick.addEventListener("click", function() {
     if (cookieCount >= clickPowerPriceAmount) {
         console.log("Item succesfully Bought");
         cookieCount -= clickPowerPriceAmount;
-        refreshCookieCount()
+        refreshCookieCount();
 
         clickPowerLevelNumber += 1;
         clickPowerPriceAmount = Math.floor(clickPowerPriceAmount * 1.5);
@@ -157,7 +152,6 @@ buyTime.addEventListener("click", function() {
 
 
 
-  
 
 
 
